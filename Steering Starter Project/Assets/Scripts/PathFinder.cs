@@ -4,27 +4,26 @@ using UnityEngine;
 
 public class PathFinder : Kinematic
 {
-    /*FollowPath myMoveType;
+    FollowPath myMoveType;
     LookWhereGoing myRotateType;
-    GameObject[] myPath;
+    public GameObject[] pathTargets;
 
     void Start()
     {
         myMoveType = new FollowPath();
         myMoveType.character = this;
-        myMoveType.path = myPath;
+        myMoveType.path = pathTargets;
 
         myRotateType = new LookWhereGoing();
         myRotateType.character = this;
         myRotateType.target = myTarget;
     }
 
-    // Update is called once per frame
     protected override void Update()
     {
         steeringUpdate = new SteeringOutput();
-        steeringUpdate.angular = myRotateType.getSteering().angular;
         steeringUpdate.linear = myMoveType.getSteering().linear;
+        steeringUpdate.angular = myRotateType.getSteering().angular;
         base.Update();
-    }*/
+    }
 }
